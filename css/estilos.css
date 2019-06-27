@@ -340,6 +340,11 @@ figure {
   height: inherit;
   flex-wrap: inherit;
 }
+.html-video {
+  width: 100%;
+  height: auto;
+  /* max-width: 100%; */
+}
 
 /** desktop first que empiece desde el MQ mas grande **/
 
