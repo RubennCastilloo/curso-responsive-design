@@ -401,6 +401,9 @@ figure {
   /* .container {
     padding: 0 1em;
   } */
+  .portfolio {
+    padding: 0;
+  }
   .hero {
     height: auto;
     position: relative;
