@@ -162,15 +162,29 @@
       </div>
     </footer>
     <script>
-      console.log('Hola mundo! es mi primera linea en JS');
-      console.log(document.querySelector('.menu'));
-      console.log(document.querySelector('#burger-menu'));
+      // console.log('Hola mundo! es mi primera linea en JS');
+      const ipad = window.matchMedia('screen and (max-width: 767px)');
+      // console.log(document.querySelector('.menu'));
+      // console.log(document.querySelector('#burger-menu'));
 
       const menu = document.querySelector('.menu');
       const burgerButton = document.querySelector('#burger-menu');
       
 
-      burgerButton.addEventListener('click', hideShow);
+      
+
+
+      ipad.addListener(validation);
+    
+      function validation(event) {
+        if (event.matches) {
+          burgerButton.addEventListener('click', hideShow);
+        } else {
+          burgerButton.removeEventListener('click', hideShow);
+        }
+        console.log(event);
+      }
+
 
       function hideShow() {
         if (menu.classList.contains('is-active')) {
