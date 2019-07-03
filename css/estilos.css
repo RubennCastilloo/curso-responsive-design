@@ -397,12 +397,15 @@ figure {
 /** desktop first que empiece desde el MQ mas grande **/
 
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
   /* .container {
     padding: 0 1em;
   } */
-  .portfolio {
+  /* .portfolio {
     padding: 0;
+  } */
+  .event-list-title {
+    margin-left: 0;
   }
   .hero {
     height: auto;
@@ -443,6 +446,10 @@ figure {
 }
 
 @media screen and (max-width: 767px) {
+  h2 {
+    font-size: 1.2em;
+    margin: .5em 0;
+  }
   .header {
     display: block;
     height: auto;
@@ -504,7 +511,7 @@ figure {
     font-size: 1em;
   }
   .project-description {
-    font-size: .8em;
+    font-size: 1em;
   }
   .event {
     width: auto;
@@ -546,6 +553,11 @@ figure {
     display: block;
     text-align: center;
     border: 1px solid transparent;
+  }
+  .social-link {
+    width: 40px;
+    height: 40px;
+    background-size: 100%;
   }
 }
 
